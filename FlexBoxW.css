@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+  
+header {
+  background-color: rgb(99, 206, 255);
+  color: white;
+  padding: 1em;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+nav {
+  background-color: rgb(39, 186, 255);
+  padding-top: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  padding-right: 10px;
+}
+  
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1em;
+  font-weight: bold;
+}
+
+.ShopMenu {
+  padding-top: 10px;
+  list-style-type: none;
+}
+
+.dropdown-content {
+  background-color: rgb(39, 186, 255);
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  display: none;
+  position: absolute;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.hero {
+  text-align: center;
+  padding-top: 200px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  background-color: rgb(170, 228, 255);
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+  
+.info-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  padding: 4em;
+  background-color: rgb(170, 228, 255);
+}
+  
+.info-section {
+  height: 200px;
+  width: 700px;
+  overflow: hidden;
+  transition: height 1s ease-in-out;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+.info-section:hover {
+  height: auto;
+}
+
+
+footer {
+  background-color: rgb(99, 206, 255);
+  color: white;
+  text-align: center;
+  padding: 2em;
+  bottom: 0;
+  width: 100%;
+}
+  
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1em;
+}
+
+.płyty {
+  color: white;
+  font-size: 50px;
+}
+
+.podpis {
+  height: 100px;  
+}
+
+.gora {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

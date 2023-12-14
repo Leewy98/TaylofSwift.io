@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="FlexBoxT.css">
+  <title>Taylor Swift</title>
+</head>
+<body>
+
+  <header>
+    <div class="gora">
+    <img src="podpis.png" alt="podpis" class="podpis">
+    <nav>
+      <a href="StronaGłowna.html">Home</a>
+      <div class="dropdown">
+        <a href="#">Shop</a>
+        <div class="dropdown-content">
+          <li class="ShopMenu"><a href="Sklep.html">Music </a></li>
+          <li class="ShopMenu"><a href="T-Shirt.html">T-Shirt</a></li>
+        </div>
+      </div>
+      <a href="wydaarzenia.html">Cocerts</a>
+      <a href="#">Gallery</a>
+    </nav>
+    </div>
+ </header>
+
+  <section class="hero">
+    <h2></h2>
+  </section>
+
+  <section class="info-sections">
+    <div class="info-section">
+        <div class="images">
+            <img src="koszulka1B.png" id="image1" width="600px" class="active">
+            <img src="koszulka1W.png" id="image2" width="600px">
+          </div>
+      <p class="title">Taylor Swift The Eras International Tour</p>
+      <p class="price">Price: 45,99$</p>
+      <div class="borderLeft"><button id="showImage1" class="button1"></button></div>
+      <div class="borderRight"><button id="showImage2" class="button2"></button></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2023 All rights reserved.</p>
+    <div>
+      <a href="#">Privacy policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">contact</a>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('showImage1').addEventListener('click', function() {
+  document.getElementById('image1').classList.add('active');
+  document.getElementById('image2').classList.remove('active');
+});
+
+document.getElementById('showImage2').addEventListener('click', function() {
+  document.getElementById('image1').classList.remove('active');
+  document.getElementById('image2').classList.add('active');
+});
+  </script>
+</body>
+</html>

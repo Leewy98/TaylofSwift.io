@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="FlexBox.css">
+  <title>Taylor Swift</title>
+</head>
+<body>
+
+  <header>
+    <div class="gora">
+    <img src="podpis.png" alt="podpis" class="podpis">
+    <nav>
+      <a href="StronaGłowna.html">Home</a>
+      <div class="dropdown">
+        <a href="#">Shop</a>
+        <div class="dropdown-content">
+          <li class="ShopMenu"><a href="Sklep.html">Music </a></li>
+          <li class="ShopMenu"><a href="T-Shirt.html">T-Shirt</a></li>
+        </div>
+      </div>
+      <a href="wydaarzenia.html">Cocerts</a>
+      <a href="#">Gallery</a>
+    </nav>
+    </div>
+ </header>
+
+  <section class="hero">
+    <img src="taylor.png" alt="Hero Image">
+    <h2></h2>
+  </section>
+
+  <section class="info-sections">
+    <div class="info-section">
+      <h3 id="tekst">
+        <span class="stary-tytul">Hi, my name is Taylor Swift.</span>
+        <span class="nowy-tytul" style="display: none;">Cześć, nazywam się Taylor Swift.</span>
+
+      </h3>
+      <p id="tekst">
+        <span class="stary-tekst">"I look back at the road I've traveled, and it feels like flipping through the pages of a well-worn diary. Each chapter holds its own story, its own melody, and its own piece of my heart. From the first strum of a guitar in my childhood bedroom to the glittering stages of sold-out arenas, my life has been a whirlwind of melodies and emotions.
+
+          There were moments when the world felt too big, too daunting, but those moments were eclipsed by the magic of music. It became my refuge, my sanctuary, a canvas where I painted my joys, my fears, my hopes, and my vulnerabilities.
+          
+          I remember the uncertainty of sharing my songs for the first time, wondering if anyone would hear the whispers of my soul woven into the lyrics. Then came the unexpected crescendo – people listened, they sang along, and suddenly my stories became their anthems.
+          
+          In the spotlight's glare, I found not just fame, but an unbreakable bond with millions who felt a kinship through my melodies. It was never just about the lyrics or the tunes; it was about connecting hearts, bridging the gaps between strangers with shared emotions.
+          
+          The journey had its share of highs that painted the sky with hues of elation, but it also wandered through valleys of heartache and doubt. Yet, through it all, I discovered strength in vulnerability, power in honesty, and resilience in adversity.
+          
+          There were lessons in every lyric, echoes of my growth stitched into every verse. The melodies evolved, mirroring the evolution of a girl learning about life, love, and the intricate dance between the two.
+          
+          I'm grateful for the loyal army of fans who stood by me, singing my songs louder than I ever could. They've been the pillars of my journey, the constant reminder of the impact music can have on souls.
+          
+          As I stand here, reflecting on this kaleidoscope of moments, I realize my story is far from over. There are more melodies to compose, more stories to unravel, and more hearts to touch. The road ahead gleams with the promise of new adventures, new songs, and new chapters waiting to be written."</span>
+        <span class="nowy-tekst" style="display:none">„Patrzę wstecz na drogę, którą przebyłem, i mam wrażenie, jakbym przeglądał strony zniszczonego pamiętnika. Każdy rozdział kryje w sobie własną historię, własną melodię i własny kawałek mojego serca. Od pierwszego uderzenia gitary w mojej dziecięcej sypialni po błyszczące sceny wyprzedanych aren, moje życie było wirem melodii i emocji.
+
+          Były chwile, kiedy świat wydawał się zbyt duży, zbyt onieśmielający, ale te chwile zostały przyćmione magią muzyki. Stało się moim schronieniem, moim sanktuarium, płótnem, na którym namalowałem moje radości, moje lęki, moje nadzieje i moje słabości.
+          
+          Pamiętam niepewność związaną z udostępnieniem moich piosenek po raz pierwszy i zastanawianie się, czy ktoś usłyszy szepty mojej duszy wplecione w teksty. Potem nastąpiło nieoczekiwane crescendo – ludzie słuchali, śpiewali i nagle moje historie stały się ich hymnami.
+          
+          W blasku reflektorów znalazłem nie tylko sławę, ale także nierozerwalną więź z milionami, którzy poczuli pokrewieństwo poprzez moje melodie. Nigdy nie chodziło tylko o teksty czy melodie; chodziło o połączenie serc, zasypanie przepaści pomiędzy nieznajomymi o wspólnych emocjach.
+          
+          Podróż miała swoje wzloty, które malowały niebo kolorami uniesienia, ale także wędrowała przez doliny bólu serca i wątpliwości. Jednak dzięki temu wszystkiemu odkryłam siłę w wrażliwości, siłę w uczciwości i odporność na przeciwności losu.
+          
+          W każdym tekście były lekcje, w każdym wersecie widniały echa mojego rozwoju. Melodie ewoluowały, odzwierciedlając ewolucję dziewczyny uczącej się o życiu, miłości i zawiłym tańcu między nimi.
+          
+          Jestem wdzięczny za lojalną armię fanów, którzy byli przy mnie i śpiewali moje piosenki głośniej niż kiedykolwiek mogłem. Byli filarami mojej podróży, ciągłym przypomnieniem o wpływie, jaki muzyka może mieć na dusze.
+          
+          Kiedy tu stoję i rozmyślam o tym kalejdoskopie chwil, zdaję sobie sprawę, że moja historia jeszcze się nie skończyła. Jest więcej melodii do skomponowania, więcej historii do rozwikłania i więcej serc do poruszenia. Droga przed nami błyszczy obietnicą nowych przygód, nowych piosenek i nowych rozdziałów czekających na napisanie.”</span>
+      </p>
+      <button onclick="zmienTekst()">Tłumaczenie</button>
+      </div>
+    <div class="info-section-photo">
+      <img src="TaylorS.png">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2023 All rights reserved.</p>
+    <div>
+      <a href="#">Privacy policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">contact</a>
+    </div>
+  </footer>
+
+  <script>
+  function zmienTekst() {
+  var staryTekst = document.querySelector('.stary-tekst');
+  var nowyTekst = document.querySelector('.nowy-tekst');
+  var starytytul = document.querySelector('.stary-tytul');
+  var nowytytul = document.querySelector('.nowy-tytul');
+
+
+  if (staryTekst.style.display !== 'none') {
+    staryTekst.style.display = 'none';
+    nowyTekst.style.display = 'inline';
+  } else {
+    staryTekst.style.display = 'inline';
+    nowyTekst.style.display = 'none';
+  }
+
+  if (starytytul.style.display !== 'none') {
+    starytytul.style.display = 'none';
+    nowytytul.style.display = 'inline';
+  } else {
+    starytytul.style.display = 'inline';
+    nowytytul.style.display = 'none';
+  }
+  }
+    </script>
+
+</body>
+</html>
