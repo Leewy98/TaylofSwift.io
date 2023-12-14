@@ -31,12 +31,9 @@ body {
     font-weight: bold;
   }
   
-  .ShopMenu {
+  .dropdown-content {
     padding-top: 10px;
     list-style-type: none;
-  }
-  
-  .dropdown-content {
     background-color: rgb(39, 186, 255);
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
