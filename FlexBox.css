@@ -32,13 +32,6 @@ nav a {
 }
 
 ul li {
-  padding-top: 10px;
-  list-style-type: none;
-  background-color: rgb(39, 186, 255);
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  display: none;
-  position: absolute;
   list-style: none;
 }
 
