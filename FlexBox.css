@@ -31,6 +31,10 @@ nav a {
   font-weight: bold;
 }
 
+ul {
+  list-style: none;
+}
+
 .dropdown-content {
   padding-top: 10px;
   list-style-type: none
