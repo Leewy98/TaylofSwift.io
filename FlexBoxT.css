@@ -30,7 +30,11 @@ body {
     margin: 0 1em;
     font-weight: bold;
   }
-  
+    ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+    
   .dropdown-content {
     padding-top: 10px;
     list-style-type: none;
